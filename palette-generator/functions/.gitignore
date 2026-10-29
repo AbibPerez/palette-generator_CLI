@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# IDEs
+.idea/
+.vscode/
+codeStyles/
+inspectionProfiles/
+
+# CMake generated files
+.cmake/
+CMakeFiles/
+cmake-build-debug/
+
+# Other apps sync
+.sync/
+
+# Temporal files
+.tmp/
+*.tmp
+
+# Android / macOS generated files
+*.bak
+.DS_Store
+
+# Generated assets
+*.svg
+*.png
+
+# User data
+palettes.json
