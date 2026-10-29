@@ -2,8 +2,8 @@ import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
 import sharp from "sharp";
-import * as style from "./cli_style.js";
-import * as data from "./retrieve_data.js";
+import * as style from "./style.js";
+import * as data from "./data.js";
 
 function pad(input) {
 	return String(input).padStart(3, "0");
