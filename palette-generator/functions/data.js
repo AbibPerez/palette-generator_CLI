@@ -1,9 +1,9 @@
 import fs from "node:fs";
 import readline from "readline";
 import process from "process";
-import * as validate from "./regexp_validations.js";
-import * as handle from "./error_handling.js";
-import * as style from "./cli_style.js";
+import * as validate from "./validation.js";
+import * as handle from "./exceptions.js";
+import * as style from "./style.js";
 
 export const rl = readline.createInterface({
   input: process.stdin,
