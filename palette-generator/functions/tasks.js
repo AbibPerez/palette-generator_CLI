@@ -19,9 +19,9 @@ export function getOutputFolder() {
 				"Palette Generator"
 			);
 			
-		case "linux":
+		case "android":
 			return "/storage/emulated/0/DCIM/PaletteGenerator";
-			
+
 		default:
 			return "./output";
 	}
@@ -53,13 +53,11 @@ export async function createSVG() {
 	
 	<style>
 	@font-face {
-		font-family: "JetBrainsMono-Light";
-		src: url("./fonts/JetBrainsMono-Light.woff2") format("woff2");
-		font-weight: 100;
+		font-family: monospace;
 	}
 	
 	text {
-		font-family: "JetBrainsMono-Light", monospace;
+		font-family: monospace;
 	}
 		
 	</style>
