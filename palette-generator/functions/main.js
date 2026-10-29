@@ -1,7 +1,7 @@
-import * as task from "./out_tasks.js";
+import * as task from "./tasks.js";
 import process from "process";
-import { rl } from "./retrieve_data.js";
-import * as style from "./cli_style.js";
+import { rl } from "./data.js";
+import * as style from "./style.js";
 
 async function main() {
 	style.bannerCLI();
