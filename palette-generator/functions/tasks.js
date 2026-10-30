@@ -20,7 +20,7 @@ export function getOutputFolder() {
 			);
 			
 		case "android":
-			return "/storage/emulated/0/DCIM/PaletteGenerator";
+			return "/storage/emulated/0/Pictures/PaletteGenerator";
 
 		default:
 			return "./output";
@@ -51,20 +51,10 @@ export async function createSVG() {
 		rx="12"
 	/>
 	
-	<style>
-	@font-face {
-		font-family: monospace;
-	}
-	
-	text {
-		font-family: monospace;
-	}
-		
-	</style>
-	
 	<text
 		x="960"
 		y="100"
+		font-family="monospace"
 		font-size="72"
 		text-anchor="middle"
 		fill="#369DFF"
@@ -77,6 +67,7 @@ export async function createSVG() {
 	<text
 		x="960"
 		y="140"
+		font-family="monospace"
 		font-size="24"
 		text-anchor="middle"
 		fill="#2881D4"
@@ -114,6 +105,7 @@ export async function createSVG() {
 			<text
 				x="${x + 150}"
 				y="970"
+				font-family="monospace"
 				text-anchor="middle"
 				font-size="48"
 				fill="#FFFFFF"
@@ -127,6 +119,7 @@ export async function createSVG() {
 			<text
 				x="${x + 150}"
 				y="1000"
+				font-family="monospace"
 				font-size="28"
 				text-anchor="middle"
 				fill="#B3B3B3"
