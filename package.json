@@ -1,15 +1,9 @@
 {
   "name": "palette-generator",
   "version": "1.0.0",
-	"description": "Generate color palettes and export them as SVG and PNG.",
+  "description": "Generate color palettes and export them as SVG and PNG.",
   "type": "module",
-
   "scripts": {
     "start": "node palette-generator/functions/main.js"
-  },
-
-  "dependencies": {
-    "@img/sharp-wasm32": "^0.35.5",
-    "sharp": "^0.35.5"
   }
 }
