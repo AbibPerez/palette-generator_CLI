@@ -6,7 +6,7 @@
 # Palette Generator CLI
 **Generate color palettes and export them as SVG and PNG**
 
-#### 🏷 Latest Release: [Palette Generator CLI v1.0](https://github.com/AbibPerez/project_portfolio/releases/tag/v1.0.0)
+#### 🏷 Latest Release: [Palette Generator CLI v1.0](https://github.com/AbibPerez/palette-generator_CLI/releases/tag/v1.0.0)
 
 </div>
 
@@ -31,10 +31,10 @@
 
 ```Shell
 # Clone repository
-git clone https://github.com/AbibPerez/project_portfolio.git
+git clone https://github.com/AbibPerez/palette-generator_CLI.git
 
 # Open cloned repository
-cd project_portfolio
+cd palette-generator_CLI
 
 # Install dependencies
 npm install
