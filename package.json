@@ -5,5 +5,9 @@
   "type": "module",
   "scripts": {
     "start": "node palette-generator/functions/main.js"
+  },
+  "dependencies": {
+    "libvips": "^0.0.2",
+    "sharp": "^0.35.5"
   }
 }
