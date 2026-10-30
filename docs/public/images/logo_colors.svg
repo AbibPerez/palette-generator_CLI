@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="ice-cream-stick">
+
+	<!-- Stick fill -->
+	<path 
+		fill="#FFAC59"
+		stroke="#CC8552" 
+		stroke-width="0.5"
+		d="M37,44.01V58a5,5,0,1,1-10,0V44H37Z"
+	></path>
+	
+	<!-- Left red shadow -->
+	<path 
+		fill="#FF334D" 
+		stroke="#FF1F3B" 
+		stroke-width="0.25"
+		d="M29,7.5V17H24V7.5a2.5,2.5,0,1,1,5,0Z"
+	></path>
+
+	<!-- Right blue shadow -->
+	<polygon 
+		fill="#4795FF" 
+		stroke="#3268B3" 
+		stroke-width="0.25" 
+		points="40 32 40 44 37 44 35 44 35 32 40 32"
+	></polygon>
+
+	<!-- LR light blue fill -->
+	<path 
+		fill="#57A0FF" 
+		stroke="#3268B3" 
+		stroke-width="0.25" 
+		d="M46 32V42.61A1.387 1.387 0 0144.61 44H40V32zM24 32V44H19.39A1.387 1.387 0 0118 42.61V32z"
+	></path>
+
+
+	<!-- Middle light blue fill -->
+	<rect 
+		width="6" 
+		height="12" 
+		x="29" 
+		y="32" 
+		fill="#57A0FF" 
+		stroke="#3268B3" 
+		stroke-width="0.25"
+	></rect>
+
+	<!-- Right dark green -->
+	<rect 
+		width="5" 
+		height="15" 
+		x="35" 
+		y="17" 
+		fill="#64D13D"
+		stroke="#53AD32"
+		stroke-width="0.25"
+	></rect>
+
+	<!-- Right light green -->
+	<rect 
+		width="6" 
+		height="15" 
+		x="40" 
+		y="17" 
+		fill="#89F25C" 
+		stroke="#5EA63F" 
+		stroke-width="0.25"
+	></rect>
+
+	<!-- Middle light green -->
+	<rect 
+		width="6" 
+		height="15" 
+		x="29" 
+		y="17" 
+		fill="#89F25C"
+		stroke="#5EA63F"
+    stroke-width="0.25"
+	></rect>
+
+	<!-- Left light greeen -->
+	<rect 
+		width="6" 
+		height="15" 
+		x="18" 
+		y="17" 
+		fill="#89F25C"
+		stroke="#5EA63F"
+    stroke-width="0.25"
+	></rect>
+
+	<!-- Right dark red -->
+	<path 
+		fill="#FF334D" 
+		stroke="#B32437" 
+		stroke-width="0.25" 
+		d="M40,7.5V17H35V7.5a2.5,2.5,0,1,1,5,0Z"
+	></path>
+
+	<!-- Left dark green -->
+	<rect 
+		width="5" 
+		height="15" 
+		x="24" 
+		y="17" 
+		fill="#64D13D" 
+		stroke="#5EA63F" 
+		stroke-width="0.25"
+	></rect>
+
+	<!-- Left dark blue -->
+	<polygon 
+		fill="#4795FF" 
+		stroke="#3268B3" 
+		stroke-width="0.25" 
+		points="29 32 29 44 27 44 24 44 24 32 29 32"
+	></polygon>
+
+	<!-- Light red -->
+	<path 
+		fill="#FF4758" 
+		stroke="#DB3D4D"
+		stroke-width="0.25"
+		d="M46,6.97V17H40V7.5a2.5,2.5,0,0,0-5,0V17H29V7.5a2.5,2.5,0,0,0-5,0V17H18V6.97A5.96634,5.96634,0,0,1,23.97,1H40.03A5.96634,5.96634,0,0,1,46,6.97Z"
+	></path>
+
+  <!-- Stick bright -->
+	<path 
+		fill="#FFBB80"
+		d="M30,53.98047a.99943.99943,0,0,1-1-1V48a1,1,0,0,1,2,0v4.98047A.99943.99943,0,0,1,30,53.98047Z"
+	></path>
+</svg>

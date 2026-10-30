@@ -60,7 +60,7 @@ export async function getHexPalette() {
 
 export async function getRGBPalette() {
   const hexArray = await getHexPalette();
-  /* 
+  /* Pre-defined palette
 	const hexArray = ["#D1CFFF", "#ACAAD2", "#8E8CAD", "#6D6B85", "#4B4A5C"]; 
 	*/
   let rgbArray = [];
@@ -91,7 +91,7 @@ export async function writeObject() {
 	so the rest of the workflow can assume it exists */
   if (!fs.existsSync(path)) {
     fs.writeFileSync(path, "{}");
-    console.log(`New file created. Working in ${green}${path}`);
+    console.log(`New file created. Working in ${green}\x1b[38;2;0;0;0m${path}\x1b[0m\n`);
   }
 
   const read = fs.readFileSync(path, "utf-8");
@@ -99,7 +99,7 @@ export async function writeObject() {
 	const bg = `\x1b[48;2;177;196;254m`;
 	const fg = style.hexColorCLI(177, 196, 254);
 
-  /* Reuse the same attempts counter 
+  /* Reuse the same attempts counter
 	used by the input handlers. */
   handle.resetCounter();
 
