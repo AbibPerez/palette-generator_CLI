@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# IDEs
+.idea/
+.vscode/
+codeStyles/
+inspectionProfiles/
+
+# CMake generated files
+.cmake/
+CMakeFiles/
+cmake-build-debug/
+
+# Obsidian config
+.obsidian/
+
+# Other apps sync
+.sync/
+
+# Temporal files
+.tmp/
+*.tmp
+
+# Android / macOS generated files
+*.bak
+.DS_Store
+
+# Generated assets
+output/
+
+# User data
+palettes.json
+
+# Obsidian config
+.obsidian/
