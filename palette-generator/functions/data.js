@@ -59,10 +59,9 @@ export async function getHexPalette() {
 }
 
 export async function getRGBPalette() {
-  const hexArray = await getHexPalette();
-  /* Pre-defined palette
-	const hexArray = ["#D1CFFF", "#ACAAD2", "#8E8CAD", "#6D6B85", "#4B4A5C"]; 
-	*/
+  // const hexArray = await getHexPalette();
+  /* Pre-defined palette */
+  const hexArray = ["#D1CFFF", "#ACAAD2", "#8E8CAD", "#6D6B85", "#4B4A5C"]; 
   let rgbArray = [];
 
   for (const h of hexArray) {

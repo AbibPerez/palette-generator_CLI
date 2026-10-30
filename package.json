@@ -7,6 +7,7 @@
     "start": "node palette-generator/functions/main.js"
   },
   "dependencies": {
+    "@img/sharp-wasm32": "^0.35.5",
     "libvips": "^0.0.2",
     "sharp": "^0.35.5"
   }
