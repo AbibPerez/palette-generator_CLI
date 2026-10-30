@@ -48,16 +48,16 @@ Each palette is stored as an array of color objects containing HEX and RGB value
 
 ```JSON
 {
-	"blue-shades": [
-		{
-			"hex": "#309BFF",
-			"rgb": {
-				"r": 48,
-				"g": 155,
-				"b": 255
-			}
-		}
-	]
+  "blue-shades": [
+    {
+      "hex": "#309BFF",
+      "rgb": {
+          "r": 48,
+          "g": 155,
+          "b": 255
+      }
+    }
+  ]
 }
 ```
 
