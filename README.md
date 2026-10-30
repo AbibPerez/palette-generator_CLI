@@ -6,6 +6,8 @@
 # Palette Generator CLI
 **Generate color palettes and export them as SVG and PNG**
 
+#### 🏷 Latest Release: [Palette Generator CLI v1.0](https://github.com/AbibPerez/project_portfolio/releases/tag/v1.0.0)
+
 </div>
 
 <div id="before-clone" align="left">
@@ -22,6 +24,7 @@
 <div id="example-image" align="center">
 	<picture>
 		<img src="./docs/public/images/blue-shades.png" style="border-radius: 5px;">
+	</picture>
 </div>
 
 ## 📦 Installation
