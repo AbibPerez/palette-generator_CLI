@@ -43,7 +43,7 @@ export async function createSVG() {
 	>
 	
 	<style>
-	  @font-face { 
+		@font-face { 
         font-family: "JetBrainsMono";
         font-style: normal;
         src: url("./fonts/JetBrainsMono-Regular.woff2") format("woff2");
@@ -72,8 +72,6 @@ export async function createSVG() {
 		font-size="72"
 		text-anchor="middle"
 		fill="#369DFF"
-		stroke="#2E88DB"
-		stroke-width="1"
 	>
 	${name}
 	</text>
@@ -84,8 +82,6 @@ export async function createSVG() {
 		font-size="24"
 		text-anchor="middle"
 		fill="#2881D4"
-		stroke="#3F71A1"
-		stroke-width="1"
 	>
 	${obj.length} colors • Generated automatically
 	
@@ -163,10 +159,10 @@ export async function createSVG() {
 	}
 	
 	fs.writeFileSync(path.join(output, `${name}.svg`), svgContent);
-	console.log("SVG created.");
+	console.log(`SVG created at ${output}/${name}.svg.`);
 	
 	await sharp(Buffer.from(svgContent))
 	.png()
 	.toFile(path.join(output, `${name}.png`));
-	console.log("PNG created.");
+	console.log(`PNG created at ${output}/${name}.png`);
 }
