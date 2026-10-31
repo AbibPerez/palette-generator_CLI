@@ -20,7 +20,7 @@ export function getOutputFolder() {
 			);
 			
 		case "android":
-			return "/storage/emulated/0/Pictures";
+			return "/storage/emulated/0/DCIM/PalleteGenerator";
 
 		default:
 			return "./output";
@@ -155,8 +155,8 @@ export async function createSVG() {
 	fs.writeFileSync(path.join(output, `${name}.svg`), svgContent);
 	console.log(`SVG created at ${output}/${name}.svg.`);
 	
-	/* await sharp(Buffer.from(svgContent))
+	await sharp(Buffer.from(svgContent))
 	.png()
 	.toFile(path.join(output, `${name}.png`));
-	console.log(`PNG created at ${output}/${name}.png`); */
+	console.log(`PNG created at ${output}/${name}.png`);
 }
