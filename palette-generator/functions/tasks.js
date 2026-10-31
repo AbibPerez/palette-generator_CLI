@@ -5,8 +5,6 @@ import sharp from "sharp";
 import * as style from "./style.js";
 import * as data from "./data.js";
 
-// ROLLBACK POINT 
-
 function pad(input) {
 	return String(input).padStart(3, "0");
 }
@@ -39,7 +37,7 @@ export async function createSVG() {
 		width="1920"
 		height="1080"
 		xmlns="http://www.w3.org/2000/svg"
-		style="background-color: #0A1A2A;"
+		style="background: #0A1A2A;"
 	>
 	
 	<style>
@@ -117,8 +115,6 @@ export async function createSVG() {
 				text-anchor="middle"
 				font-size="48"
 				fill="#FFFFFF"
-				stroke="#D0D0D0"
-				stroke-width="1"
 				>
 			${hex}
 			</text>
@@ -130,8 +126,6 @@ export async function createSVG() {
 				font-size="28"
 				text-anchor="middle"
 				fill="#B3B3B3"
-				stroke="#8A8A8A"
-				stroke-width="1"
 				>
 				${pad(r)} ${pad(g)} ${pad(b)}
 				</text>
@@ -161,8 +155,8 @@ export async function createSVG() {
 	fs.writeFileSync(path.join(output, `${name}.svg`), svgContent);
 	console.log(`SVG created at ${output}/${name}.svg.`);
 	
-	await sharp(Buffer.from(svgContent))
+	/* await sharp(Buffer.from(svgContent))
 	.png()
 	.toFile(path.join(output, `${name}.png`));
-	console.log(`PNG created at ${output}/${name}.png`);
+	console.log(`PNG created at ${output}/${name}.png`); */
 }
