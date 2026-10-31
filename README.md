@@ -6,7 +6,7 @@
 # Palette Generator CLI
 **Generate color palettes and export them as SVG and PNG**
 
-#### 🏷 Latest Release: [Palette Generator CLI v1.0](https://github.com/AbibPerez/palette-generator_CLI/releases/tag/v1.0.0)
+#### 🏷 Latest Release: [Palette Generator CLI v1.0.1](https://github.com/AbibPerez/palette-generator_CLI/releases/tag/v1.0.1)
 
 </div>
 
