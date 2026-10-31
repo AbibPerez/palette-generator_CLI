@@ -40,11 +40,21 @@ cd palette-generator_CLI
 npm install
 ```
 
+### 🤖 Requirements for Android (Termux)
+PNG export on Android (Termux) requires Inkscape.
+
+Install Inkscape:
+```bash
+pkg install -y inkscape
+```
+
 ## 🚀 Usage
 ```Shell
 # Run application
 npm start
 ```
+
+
 
 ## 🗄️ Palette Schema
 Each palette is stored as an array of color objects containing HEX and RGB values.
