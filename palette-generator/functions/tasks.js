@@ -13,7 +13,7 @@ function pad(input) {
 function exportFromInkscape(svgFile, pngPath) {
 	execSync(
 		`inkscape --export-type=png "${svgFile}" -o "${pngPath}"`,
-		{ stdio: "inherit" }
+		{ stdio: "ignore" }
 	);
 	
 	console.log(`PNG created at ${pngPath}`);

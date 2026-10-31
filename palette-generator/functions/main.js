@@ -15,15 +15,16 @@ function hasInkscape() {
 
 function validateDependencies() {
 	if (process.platform === "android") {
-		
+
 		if (!hasInkscape()) {
 			console.error(`
-				Inkscape is required for PNG export on Android
-				
-				Install it with:
-				
-				pkg install -y inkscape
+Inkscape is required for PNG export on Android
+
+Install it with:
+
+pkg install -y inkscape
 			`);
+			process.exit(1);
 		}
 	}
 }
