@@ -2,11 +2,28 @@ import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
 import sharp from "sharp";
+import { execSync } from "node:child_process";
 import * as style from "./style.js";
 import * as data from "./data.js";
 
 function pad(input) {
 	return String(input).padStart(3, "0");
+}
+
+function exportFromInkscape(svgFile, pngPath) {
+	execSync(
+		`inkscape --export-type=png "${svgFile}" -o "${pngPath}"`,
+		{ stdio: "inherit" }
+	);
+	
+	console.log(`PNG created at ${pngPath}`);
+}
+
+async function exportFromSharp(content, output, name) {
+	await sharp(Buffer.from(content))
+	.png()
+	.toFile(path.join(output, `${name}.png`));
+	console.log(`PNG created at ${output}/${name}.png`);
 }
 
 export function getOutputFolder() {
@@ -19,8 +36,8 @@ export function getOutputFolder() {
 				"Palette Generator"
 			);
 			
-		case "android":
-			return "/storage/emulated/0/DCIM/PalleteGenerator";
+		case "android": // Termux
+			return "/storage/emulated/0/DCIM/PaletteGenerator"
 
 		default:
 			return "./output";
@@ -159,11 +176,15 @@ export async function createSVG() {
 	fs.mkdirSync(output, { recursive: true });
 	}
 	
+	
 	fs.writeFileSync(path.join(output, `${name}.svg`), svgContent);
 	console.log(`SVG created at ${output}/${name}.svg.`);
 	
-	await sharp(Buffer.from(svgContent))
-	.png()
-	.toFile(path.join(output, `${name}.png`));
-	console.log(`PNG created at ${output}/${name}.png`);
+	if (process.platform != "android") {
+		await exportFromSharp(svgContent, output, name);
+	} else {
+		const svgPath = path.join(output, `${name}.svg`);
+		const pngPath = path.join(output, `${name}.png`);
+		exportFromInkscape(svgPath, pngPath);
+	}
 }
