@@ -37,9 +37,16 @@ export async function createSVG() {
 		width="1920"
 		height="1080"
 		xmlns="http://www.w3.org/2000/svg"
-		style="background: #0A1A2A;"
 	>
-	
+
+	<rect
+		x="0"
+		y="0"
+		width="1920"
+		height="1080"
+		fill="#0A1A2A"
+	/>
+
 	<style>
 		@font-face { 
         font-family: "JetBrainsMono";
